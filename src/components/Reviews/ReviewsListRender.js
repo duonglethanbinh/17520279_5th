@@ -11,7 +11,7 @@ class ReviewsRender extends Component {
     handleEvents() {
         return this.props.locationName.map((location, i) => {
             return (
-                <ReviewsGetList key={i} location={location.name} onClick={this.props.onClick} />
+                <ReviewsGetList key={i} location={location.name} />
             )
         })
     }
