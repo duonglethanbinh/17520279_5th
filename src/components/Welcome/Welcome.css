@@ -1,0 +1,19 @@
+.welcome_content {
+    height: 600px;
+    font-size: 24px;
+    color: rgb(14, 11, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fcdc97;
+}
+
+.welcome_content h1 {
+    color: rgb(19, 29, 117);
+}
+
+@media only screen and (max-width: 800px) {
+    .welcome_content {
+        height: 600px;
+    }
+}
