@@ -11,9 +11,11 @@
     font-family: 'Baloo Thambi 2', cursive;
     scroll-behavior: smooth;
 }
+html{
+    background-color: #fcdc97;
+}
 main {
-    margin-top: 56px;
-    padding: 10px 0px;
+    height: calc(100%-60px);
     background-color: #fcdc97;
     display: block;
 }

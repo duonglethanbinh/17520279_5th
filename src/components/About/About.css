@@ -1,5 +1,9 @@
 /* about me intro */
 
+.about_box {
+    background-color: #fcdc97;
+}
+
 .about_content {
     text-align: center;
     margin: 100px;
