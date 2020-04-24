@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PlaceRender from './PlaceRender';
+import Hueimage1 from '../../../img/pics/hue1.jpg'
+import Hueimage2 from '../../../img/pics/hue2.jpg'
 class Hue extends Component {
     constructor(props) {
         super(props);
@@ -8,7 +10,7 @@ class Hue extends Component {
         };
     }
     componentDidMount() {
-        fetch('https://raw.githubusercontent.com/duonglethanbinh/Data_For_AS5/master/db.json')
+        fetch('https://raw.githubusercontent.com/duonglethanbinh/data_json_as5/master/db.json')
             .then(response => response.json())
             .then(data => this.setState({ locationName: data.Hue })
             )
@@ -17,12 +19,13 @@ class Hue extends Component {
         const { locationName } = this.state;
         return (
             <div className="main_box">
-                <h1>{this.props.getNamePalce}</h1>
+                <img className="rounded mx-auto d-block" src={Hueimage1} alt="locaton" />
                 {locationName.map((place, i) => {
                     return (
                         <PlaceRender key={i} id={locationName[i].id} description={locationName[i].description} />
                     )
                 })}
+                <img className="rounded mx-auto d-block" src={Hueimage2} alt="locaton" />
             </div>
         )
     }

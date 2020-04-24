@@ -6,7 +6,7 @@ class ReviewsRender extends Component {
             <div className="col-md-4">
                 <div className="card mb-4 box-shadow">
                     <div className="card-body">
-                        <p className="card-text"><a href={`/${this.props.name}`}>{this.props.name}</a></p>
+                        <p className="card-text"><a href={`/${this.props.id}`}>{this.props.name}</a></p>
                     </div>
                 </div>
             </div>

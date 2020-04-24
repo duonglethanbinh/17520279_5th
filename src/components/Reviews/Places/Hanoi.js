@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PlaceRender from './PlaceRender';
+import Hanoiimage1 from '../../../img/pics/hanoi1.jpg'
+import Hanoiimage2 from '../../../img/pics/hanoi2.jpg'
 class Hanoi extends Component {
     constructor(props) {
         super(props);
@@ -8,7 +10,7 @@ class Hanoi extends Component {
         };
     }
     componentDidMount() {
-        fetch('https://raw.githubusercontent.com/duonglethanbinh/Data_For_AS5/master/db.json')
+        fetch('https://raw.githubusercontent.com/duonglethanbinh/data_json_as5/master/db.json')
             .then(response => response.json())
             .then(data => this.setState({ locationName: data.HaNoi })
             )
@@ -17,12 +19,13 @@ class Hanoi extends Component {
         const { locationName } = this.state;
         return (
             <div className="main_box">
-                <h1>{this.props.getNamePalce}</h1>
+                <img className="rounded mx-auto d-block" src={Hanoiimage1} alt="locaton" />
                 {locationName.map((place, i) => {
                     return (
                         <PlaceRender key={i} id={locationName[i].id} description={locationName[i].description} />
                     )
                 })}
+                <img className="rounded mx-auto d-block" src={Hanoiimage2} alt="locaton" />
             </div>
         )
     }

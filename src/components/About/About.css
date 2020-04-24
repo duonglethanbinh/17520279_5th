@@ -29,6 +29,8 @@
     vertical-align: middle;
     margin: 10px 60px;
     font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 @media only screen and (max-width: 700px) {
