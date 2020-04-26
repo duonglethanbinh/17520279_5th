@@ -1,20 +1,12 @@
 .welcome_content {
-    height: 500px;
     font-size: 24px;
     color: rgb(14, 11, 44);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: #fcdc97;
-    margin: 0;
-    margin-top: 60px;
+    margin-top: 62px;
+    margin-bottom: 56px;
 }
 
 .welcome_content h1 {
     color: rgb(19, 29, 117);
-}
-@media only screen and (max-width: 700px) {
-    .welcome_content{
-        height: calc(100%-60px);
-    }
 }

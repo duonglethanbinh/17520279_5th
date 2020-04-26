@@ -1,25 +1,21 @@
 /* about me intro */
 
-.about_box {
-    background-color: #fcdc97;
-}
-
 .about_content {
+    background-color: #fcdc97;
+    margin: 62px 0;
+    margin-bottom: 56px;
     text-align: center;
-    margin: 100px;
-    padding: 50px;
 }
 
 .about_content h3 {
-    font-size: 30px;
-    margin: 30px 0;
+    font-size: 28px;
+    padding: 25px 0;
 }
 
 .about_content img {
     display: inline-block;
     vertical-align: middle;
-    width: 30%;
-    margin: 10px;
+    width: 25%;
 }
 
 .about_content p {
@@ -34,23 +30,13 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .welcome_content {
-        padding: 50px 0px;
-        margin: 15px;
-        text-align: center;
-    }
-    .about_content img {
-        width: 100%;
-    }
-    .about_content {
-        margin: 15px;
-    }
-    .about_content img {
-        width: 70%;
+      .about_content img {
+        width: 50%;
     }
     .about_content p {
         margin: 10px;
-        width: 90%;
+        width: 85%;
         font-size: 20px;
+        line-height: 2;
     }
 }
