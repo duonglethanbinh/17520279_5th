@@ -4,10 +4,6 @@ import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Reviews from '../Reviews/Reviews';
 import Welcome from '../Welcome/Welcome';
-// import Hanoi from '../Reviews/Places/Hanoi';
-// import Hochiminh from '../Reviews/Places/Hochiminh';
-// import Hue from '../Reviews/Places/Hue';
-// import Danang from '../Reviews/Places/Danang';
 import NotFound from '../NotFound/NotFound';
 import Detail from '../Reviews/Detail';
 class RouterURL extends Component {
